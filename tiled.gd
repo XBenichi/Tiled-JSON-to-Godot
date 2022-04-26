@@ -23,10 +23,11 @@ func loadmap():
 	file.open(mapPath, File.READ);
 	map = parse_json(file.get_as_text())
 	
-	for prop in map.properties:
-		if prop.name == "music":
-			if prop.value != "":
-				print("map has a music track called ", prop.value)
+	if map.has("properties"):
+		for prop in map.properties:
+			if prop.name == "music":
+				if prop.value != "":
+					print("map has a music track called ", prop.value)
 	
 	if map.has("layers"):
 		for layers in range(0,map.layers.size()):
@@ -34,6 +35,7 @@ func loadmap():
 			tilemap.cell_size = Vector2(map.tilewidth,map.tileheight)
 			tilemap.name = map.layers[layers].name
 			tilemap.tile_set = load(tileset1Path)
+			tilemap.cell_y_sort = true
 			
 			var collection = false
 			
@@ -67,7 +69,7 @@ func loadmap():
 					var atlas_Y = floor(tile / (atlas_image.get_width()/int(map.tilewidth)))
 					
 					
-					if map.tilesets[1] != null:
+					if map.tilesets.size() != 1:
 						if tile >= map.tilesets[1].firstgid-1:
 							tilemap.set_cell(
 								cell.x,
