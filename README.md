@@ -7,7 +7,7 @@ still wip btw
 you can help if you want ig
 
 
-NOT SUPPORTED:
+## NOT SUPPORTED:
 
 - embeded maps
 
