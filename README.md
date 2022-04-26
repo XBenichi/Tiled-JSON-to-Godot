@@ -9,12 +9,18 @@ you can help if you want ig
 
 NOT SUPPORTED:
 
->embeded maps
->image layers
->groups
->more than 1 tileset
->more than 1 collection of images tileset
+- embeded maps
 
+- image layers
+
+- groups
+
+- more than 1 tileset
+
+- more than 1 collection of images tileset
+
+
+youll have to edit the tiled.gd for adding other objects in an object layer
 
 
 ## how to use
