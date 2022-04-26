@@ -20,9 +20,6 @@ you can help if you want ig
 - more than 1 collection of images tileset
 
 
-youll have to edit the tiled.gd for adding other objects in an object layer
-
-
 ## how to use
 
 1)make a map in tiled
