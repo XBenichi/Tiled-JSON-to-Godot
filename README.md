@@ -1,6 +1,6 @@
-# Tiled-JSON-to-Godot
+# Tiled JSON to Godot
 
-![comparison between tiled and godot](benichi.neocities.org/assets/ezgif.com-gif-maker.png)
+![comparison between tiled and godot](https://benichi.neocities.org/assets/ezgif.com-gif-maker.png)
 
 script for loading tiled json files into godot at runtime
 
